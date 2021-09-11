@@ -7,7 +7,11 @@
 		<!-- tipographie -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
+		
+		<!--  icons -->
+		<script src="https://kit.fontawesome.com/eb89c8d48e.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<!-- title -->
 		<title>ChronoToken | Embark on the Game of Chrono Tokens</title>
 		<!-- Icon -->
@@ -22,234 +26,57 @@
         <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon-precomposed.png">
         <link rel="apple-touch-icon" href="assets/images/apple-touch-icon-precomposed.png"> -->
 		<!-- CSS -->
-		<link rel="stylesheet" href="assets/css/index-last.css" />
+		<link rel="stylesheet" href="assets/css/index-new.css" />
 	</head>
 	<body>
-		<header role="banner" class="c-header">
-			<span class="c-header__background"></span>
-			<div class="o-container c-header__content">
-				<div class="c-header__top">
-					<a href="" title="chrono token" class="c-logo c-logo--negative">Chrono Token</a>
-					<nav role="navigation" class="c-navigation">
-						<div class="c-navigation__header">
-							<a href="" title="chrono token" class="c-logo">chrono token</a>
-							<button class="c-navigation__close u-text-light" title="Close menu">
-								<svg class="c-icon c-icon--xs"><use xlink:href=""></use></svg>
-							</button>
-						</div>
-						<div class="c-navigation__body">
-							<ul class="c-navigation__list">
-								<li class="c-navigation__item">
-									<a href="" class="c-navigation__anchor" title="Quick Start">Quick Start</a>
-								</li>
-								<li class="c-navigation__item">
-									<a href="" class="c-navigation__anchor" title="Learn">Learn</a>
-								</li>
-								<li class="c-navigation__item">
-									<a href="" class="c-navigation__anchor" title="Plugins">Plugins</a>
-								</li>
-								<li class="c-navigation__item">
-									<a href="" class="c-navigation__anchor" title="Community">Community</a>
-								</li>
-								<li class="c-navigation__item">
-									<a href="" target="_blank" rel="noopener" class="c-navigation__anchor" title="Blog">Blog</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-					<div class="o-flex o-flex-center">
-						<form action="" class="o-flex__item u-hidden-until-large">
-							<span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr"
-								><input
-									type="search"
-									placeholder="Search"
-									id="search-input"
-									class="ds-input"
-									autocomplete="off"
-									spellcheck="false"
-									role="combobox"
-									aria-autocomplete="list"
-									aria-expanded="false"
-									aria-label="search input"
-									aria-owns="algolia-autocomplete-listbox-0"
-									dir="auto"
-									style="position: relative; vertical-align: top" />
-								<pre
-									aria-hidden="true"
-									class="hljs"
-									style="
-										position: absolute;
-										visibility: hidden;
-										white-space: pre;
-										font-family: Roboto, sans-serif;
-										font-size: 18px;
-										font-style: normal;
-										font-variant: normal;
-										font-weight: 400;
-										word-spacing: 0px;
-										letter-spacing: normal;
-										text-indent: 0px;
-										text-rendering: auto;
-										text-transform: none;
-									"
-								></pre>
-								<span
-									class="ds-dropdown-menu"
-									role="listbox"
-									id="algolia-autocomplete-listbox-0"
-									style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto"
-									><div class="ds-dataset-1"></div></span
-							></span>
-						</form>
-						<div class="o-flex__item">
-							<ul class="o-flex o-flex-center">
-								<li class="o-flex__item">
-									<a href="" title="Github" target="_blank" class="u-link-ghost">
-										<svg class="c-icon"><use xlink:href=""></use></svg>
-									</a>
-								</li>
-								<li class="o-flex__item">
-									<a href="" title="Twitter" target="_blank">
-										<svg class="c-icon"><use xlink:href=""></use></svg>
-									</a>
-								</li>
-								<li class="o-flex__item u-hidden-large-up">
-									<button type="button" class="c-navigation__trigger u-link-ghost" title="Open menu">
-										<svg class="c-icon"><use xlink:href=""></use></svg>
-									</button>
-								</li>
-							</ul>
-						</div>
-					</div>
+		<header class="header">
+			<section class="container">
+				<div class="logo">
+					<a href="" title="chrono token" class="svg-logo svg-logo--negative"></a>
 				</div>
 				<div class="c-quick-search o-distance-m u-hidden-large-up">
 					<input type="search" id="inp-search" placeholder="Search" />
 				</div>
-				<div class="c-header__body">
-					<h1 class="c-title u-text-ghost">Embark into the 'Chrono Token' Game.</h1>
+				<button class="menu-btn ">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+					</svg>
+					<svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path
+							d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+						/>
+					</svg>
+				</button>
+				<nav class="menu">
+					<a href="#home">Home</a>
+					<a href="#about">About</a>
+					<a href="#start">Start</a>
+					<a href="#team">Team</a>
+					<a href="#roadmap">Roadmap</a>
+					<!-- <a href="#contact">Contact</a> -->
+					<!-- <a href="#faqs">FAQS</a> -->
+				</nav>
+			</section>
+		</header>
+		<section  class="home full-lg-screen">
+			<article class="jumbotron">
+				<article class="jumbotron-content container">
+					<h1 class="jumbotron-title">
+						<span style="--hero-text-color: var(--tittle-color)">Embark into the </span>
+						<span class="text-light" style="--hero-text-color: var(--text-white-color)">Cripto Game.</span>
+					</h1>
+					<h2 class="jumbotron-subtitle">
+						Never lose!. <br />
+						play, buy, sell, and win. <br />
+						You <span> always win!</span>
+					</h2>
 
-					<p class="c-subtitle o-distance-s">
-						The all-in-one developer platform for building and deploying decentralized applications.
-					</p>
-
-					<div class="o-buttonbar">
-						<a href="" class="c-button o-buttonbar__item" title="Get Started">Get Started</a>
-
-						<!-- <span class="c-button c-button--stateless o-buttonbar__item">Hello world</span> -->
-					</div>
+					<button class="space-v-l btn-liquid">
+						<a href="" class=" inner" title="Get Started">Get Started</a>
+					</button>
 
 					<div class="o-distance-l">
 						<span>
-							<style type="text/css">
-								body {
-									margin: 0;
-								}
-								a {
-									text-decoration: none;
-									outline: 0;
-								}
-								.widget {
-									display: inline-block;
-									overflow: hidden;
-									font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
-									font-size: 0;
-									line-height: 0;
-									white-space: nowrap;
-								}
-								.btn,
-								.social-count {
-									position: relative;
-									display: inline-block;
-									display: inline-flex;
-									height: 14px;
-									padding: 2px 5px;
-									font-size: 11px;
-									font-weight: 600;
-									line-height: 14px;
-									vertical-align: bottom;
-									cursor: pointer;
-									-webkit-user-select: none;
-									-moz-user-select: none;
-									-ms-user-select: none;
-									user-select: none;
-									background-repeat: repeat-x;
-									background-position: -1px -1px;
-									background-size: 110% 110%;
-									border: 1px solid;
-								}
-								.btn {
-									border-radius: 0.25em;
-								}
-								.btn:not(:last-child) {
-									border-radius: 0.25em 0 0 0.25em;
-								}
-								.social-count {
-									border-left: 0;
-									border-radius: 0 0.25em 0.25em 0;
-								}
-								.widget-lg .btn,
-								.widget-lg .social-count {
-									height: 16px;
-									padding: 5px 10px 20px 10px;
-									font-size: 12px;
-									line-height: 16px;
-								}
-								.octicon {
-									display: inline-block;
-									vertical-align: text-top;
-									fill: currentColor;
-									overflow: visible;
-								}
-								.btn {
-									color: #24292f;
-									background-color: #ebf0f4;
-									border-color: #ccd1d5;
-									border-color: rgba(27, 31, 36, 0.15);
-									background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f6f8fa'/%3e%3cstop offset='90%25' stop-color='%23ebf0f4'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");
-									background-image: -moz-linear-gradient(top, #f6f8fa, #ebf0f4 90%);
-									background-image: linear-gradient(180deg, #f6f8fa, #ebf0f4 90%);
-									filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF6F8FA', endColorstr='#FFEAEFF3');
-								}
-								:root .btn {
-									filter: none;
-								}
-								.btn:focus,
-								.btn:hover {
-									background-color: #e9ebef;
-									background-position: 0 -0.5em;
-									border-color: #caccd1;
-									border-color: rgba(27, 31, 36, 0.15);
-									background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f3f4f6'/%3e%3cstop offset='90%25' stop-color='%23e9ebef'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");
-									background-image: -moz-linear-gradient(top, #f3f4f6, #e9ebef 90%);
-									background-image: linear-gradient(180deg, #f3f4f6, #e9ebef 90%);
-									filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF3F4F6', endColorstr='#FFE8EAEE');
-								}
-								:root .btn:focus,
-								:root .btn:hover {
-									filter: none;
-								}
-								.btn:active {
-									background-color: #e5e9ed;
-									border-color: #c7cbcf;
-									border-color: rgba(27, 31, 36, 0.15);
-									box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 36, 0.15);
-									background-image: none;
-									filter: none;
-								}
-								.social-count {
-									color: #24292f;
-									background-color: #fff;
-									border-color: #ddddde;
-									border-color: rgba(27, 31, 36, 0.15);
-								}
-								.social-count:focus,
-								.social-count:hover {
-									color: #0969da;
-								}
-								.octicon-heart {
-									color: #bf3989;
-								}
-							</style>
 							<div class="widget widget-lg">
 								<a class="btn" href="" rel="noopener" target="_blank" aria-label="Star"
 									><svg viewBox="0 0 16 16" width="16" height="16" class="octicon octicon-star" aria-hidden="true">
@@ -260,7 +87,7 @@
 									>&nbsp;<span>Star</span></a
 								><a
 									class="social-count"
-									href="https://github.com/embarklabs/embark/stargazers"
+									href=""
 									rel="noopener"
 									target="_blank"
 									aria-label="55555 chronotokengazers on GitHub"
@@ -269,23 +96,143 @@
 							</div>
 						</span>
 					</div>
+				</article>
+			</article>
+		</section>
+		<section id="home" class="container full-lg-screen section ">
+			<article >
+				<aside class="heading text-center">
+					<h2 class="heading-title c-section-title">
+						<span class="text-light" style="--hero-text-color: var(--fourth-color)">More than a </span>Cripto Token.
+					</h2>
+
+					<p class="heading-subtitle">
+						Chrono Token is the first a Binance Smart Chain DeFi token with a
+						<span class="text-light bolder" style="--hero-text-color: var(--fourth-color)">'Game Prize'</span> for the
+						holders.
+					</p>
+
+					<p class="heading-footer">
+						<a href="" class="extra-bolder" title="Join the Community" style="--link-color: var(--reverse-link-color)"
+							>Join the Community</a
+						>
+					</p>
+				</aside>
+
+				<aside class="distance-l heading-cards ">
+					
+						<div class="heading-card">
+							<!-- <i class="svg-icon fas fa-coins fa-5x"></i> -->
+							<div class="shine column thumbnail300">
+  								<figure ><img src="assets/icons/Target_perspective_matte.png" alt="easy to participate"></figure>
+							</div>
+							
+							<h3 class="text-center text-lg-left">Easy to participate</h3>
+							<p class="text-medium">
+								You just have to connect your wallet, with some funds from BNB, the cryptocurrency of Binance Smart Chain, using Metamask in your browser.
+							</p>
+							<p class="">
+								<a href="" title="Learn more" class="extra-bolder" style="--link-color: var(--reverse-link-color)">Learn more</a>
+							</p>
+						</div>
+
+						<div class="heading-card">
+							<!-- <i class="svg-icon fas fa-chart-line fa-5x"></i> -->
+							<div class="shine column thumbnail300">
+  								<figure ><img src="assets/icons/Dashboard_perspective_matte.png" alt="buy low and shell hight"></figure>
+							</div>
+							<h3 class="text-center text-lg-left">Buy low and sell high</h3>
+							<p class="text-medium">
+								Because every time a Chrono Token is bought, a percentage is burned, another goes to the holders and another to the 'Chrono Game' pot, the price fluctuates quickly.
+							</p>
+							<p class="">
+								<a href="" title="Learn more" class="extra-bolder" style="--link-color: var(--reverse-link-color)">Learn more</a>
+							</p>
+						</div>
+
+						<div class="heading-card">
+							
+							<!-- <i class="svg-icon fas fa-trophy fa-5x"></i> -->
+							<div class="shine column thumbnail300">
+  								<figure ><img src="assets/icons/Money_bag_perspective_matte.png" alt="stay tuned to the chronogame"></figure>
+							</div>
+							<h3 class="text-center text-lg-left">Stay tuned to the 'Chrono Game'</h3>
+
+							<p class="text-medium">
+								A game will be launched every x time and those closest to the established purchase time will win the jackpot!
+							</p>
+
+							<p class="">
+								<a href="" title="Learn more" class="extra-bolder" style="--link-color: var(--reverse-link-color)">Learn more</a>
+							</p>
+						</div>
+					</aside>
 				</div>
+			</article>
+		</section>
+		<section id="about" class="container full-lg-screen section ">
+			<div class="">
+				<aside class="text-center text-lg-left bordered">
+					<div class="same-row">
+						<h2 class="heading-title c-section-title">
+						<span class="text-light" style="--hero-text-color: var(--fourth-color)">Launching</span> Cripto Token.
+						
+					</h2>
+					
+
+					<figure class="snip1321">
+						<img src="assets/images/logo_009_500.png" class="thumbnail200 circle" alt="launching cripto token ITO offert" />
+						<figcaption><i class="ion-upload"></i>
+							<h4>Produced By    </h4>
+							<h2>SMAdvising</h2>
+						</figcaption><a href="#"></a>
+					</figure>
+
+					</div>
+					
+					<div class="heading-subtitle ">
+						<p>Chrono Token, web starts at september of 2021, but we launch the first 
+							<span class="text-light bolder" style="--hero-text-color: var(--fourth-color)">ITO (Initial Token Offert)</span> 
+							several weeks later, because we want to check first that the community is interested in this project, before embarking on 200%
+						</p>
+						
+					</div>
+
+					<p class="heading-footer">
+						<a href="" class="extra-bolder" title="Join the Community" style="--link-color: var(--reverse-link-color)"
+							>Join the Community</a
+						>
+					</p>
+				</aside>
 			</div>
-		</header>
+			<div class="about">
+				<article class="text-lg-center">
+					<aside class="text-lg-left">
+						<h1>555,555,555,555,555 Total Tokens </h1>
+						<h2>This is a real brutality, never thought before</h2>
+						<h4>There will be about 500k times more tokens, than inhabitants on earth, which means that each 
+							one will be able to buy 500k and there will still be enough to continue trading<i> A fucking madness! </i></h3>
+					</aside>
+				</article>
+				<article class="text-lg-right">
+					<aside class="text-center text-lg-right">
+						<h1>Juan Luna</h1>
+						<h5>Entrepeneur & <i>Full Stack Web Developer </i></h5>
+					</aside>
+				</article>
+				<article class="text-lg-right">
+					<aside class="text-center text-lg-right">
+						<h1>Juan Luna</h1>
+						<h5>Entrepeneur & <i>Full Stack Web Developer </i></h5>
+					</aside>
+				</article>
+			</div>
+			
+		</section>
 
 		<main role="main">
 			<section class="o-container o-distance">
-				<div class="o-heading o-center">
-					<h2 class="o-heading__title c-section-title"><span class="u-text-light">More than a </span>framework.</h2>
-
-					<p class="o-heading__subtitle c-subtitle u-text-death">
-						chrono token is a platform that enables easy development and deployment of decentralized applications.
-					</p>
-
-					<p class="o-heading__footer">
-						<a href="" class="c-link" title="Join the Community">Join the Community</a>
-					</p>
-				</div>
+				<div class="o-heading o-center"></div>
 
 				<div class="o-distance-l">
 					<div class="o-grid">
@@ -685,5 +632,7 @@
 				</div>
 			</div>
 		</footer>
+		<script src="assets/js/index.js"></script>
+		<script src="assets/js/btn-liquid.js"></script>
 	</body>
 </html>
