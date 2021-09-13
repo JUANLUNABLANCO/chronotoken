@@ -8,10 +8,9 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
-		
+
 		<!--  icons -->
 		<script src="https://kit.fontawesome.com/eb89c8d48e.js" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<!-- title -->
 		<title>ChronoToken | Embark on the Game of Chrono Tokens</title>
 		<!-- Icon -->
@@ -26,7 +25,9 @@
         <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon-precomposed.png">
         <link rel="apple-touch-icon" href="assets/images/apple-touch-icon-precomposed.png"> -->
 		<!-- CSS -->
-		<link rel="stylesheet" href="assets/css/index-new.css" />
+		<link rel="stylesheet" href="assets/css/index.css" />
+		<!-- JS jquery for liquid button -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	</head>
 	<body>
 		<header class="header">
@@ -37,7 +38,7 @@
 				<div class="c-quick-search o-distance-m u-hidden-large-up">
 					<input type="search" id="inp-search" placeholder="Search" />
 				</div>
-				<button class="menu-btn ">
+				<button class="menu-btn">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 						<path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
 					</svg>
@@ -58,9 +59,9 @@
 				</nav>
 			</section>
 		</header>
-		<section  class="home full-lg-screen">
+		<section id="home" class="home full-lg-screen">
 			<article class="jumbotron">
-				<article class="jumbotron-content container">
+				<aside class="jumbotron-content container">
 					<h1 class="jumbotron-title">
 						<span style="--hero-text-color: var(--tittle-color)">Embark into the </span>
 						<span class="text-light" style="--hero-text-color: var(--text-white-color)">Cripto Game.</span>
@@ -72,7 +73,7 @@
 					</h2>
 
 					<button class="space-v-l btn-liquid">
-						<a href="" class=" inner" title="Get Started">Get Started</a>
+						<a href="" class="inner" title="Get Started">Get Started</a>
 					</button>
 
 					<div class="o-distance-l">
@@ -96,11 +97,11 @@
 							</div>
 						</span>
 					</div>
-				</article>
+				</aside>
 			</article>
 		</section>
-		<section id="home" class="container full-lg-screen section ">
-			<article >
+		<section id="about" class="container full-lg-screen about">
+			<article>
 				<aside class="heading text-center">
 					<h2 class="heading-title c-section-title">
 						<span class="text-light" style="--hero-text-color: var(--fourth-color)">More than a </span>Cripto Token.
@@ -118,116 +119,180 @@
 						>
 					</p>
 				</aside>
+				<aside class="distance-l heading-cards">
+					<div class="heading-card">
+						<!-- <i class="svg-icon fas fa-coins fa-5x"></i> -->
+						<div class="heading-card_head shine thumbnail250">
+							<figure>
+								<img class="" src="assets/icons/Target_perspective_matte.png" alt="easy to participate" />
+							</figure>
+						</div>
 
-				<aside class="distance-l heading-cards ">
-					
-						<div class="heading-card">
-							<!-- <i class="svg-icon fas fa-coins fa-5x"></i> -->
-							<div class="shine column thumbnail300">
-  								<figure ><img src="assets/icons/Target_perspective_matte.png" alt="easy to participate"></figure>
-							</div>
-							
+						<div class="heading-card_body">
 							<h3 class="text-center text-lg-left">Easy to participate</h3>
 							<p class="text-medium">
-								You just have to connect your wallet, with some funds from BNB, the cryptocurrency of Binance Smart Chain, using Metamask in your browser.
-							</p>
-							<p class="">
-								<a href="" title="Learn more" class="extra-bolder" style="--link-color: var(--reverse-link-color)">Learn more</a>
+								You just have to connect your wallet, with some funds from BNB, the cryptocurrency of Binance Smart
+								Chain, using Metamask in your browser.
 							</p>
 						</div>
+						<p class="heading-card_foot text-lg-right">
+							<a href="" title="Learn more" class="extra-bolder" style="--link-color: var(--reverse-link-color)"
+								>Learn more</a
+							>
+						</p>
+					</div>
 
-						<div class="heading-card">
-							<!-- <i class="svg-icon fas fa-chart-line fa-5x"></i> -->
-							<div class="shine column thumbnail300">
-  								<figure ><img src="assets/icons/Dashboard_perspective_matte.png" alt="buy low and shell hight"></figure>
-							</div>
+					<div class="heading-card">
+						<!-- <i class="svg-icon fas fa-chart-line fa-5x"></i> -->
+						<div class="heading-card_head shine thumbnail250">
+							<figure>
+								<img class="" src="assets/icons/Dashboard_perspective_matte.png" alt="buy low and shell hight" />
+							</figure>
+						</div>
+						<div class="heading-card_body">
 							<h3 class="text-center text-lg-left">Buy low and sell high</h3>
 							<p class="text-medium">
-								Because every time a Chrono Token is bought, a percentage is burned, another goes to the holders and another to the 'Chrono Game' pot, the price fluctuates quickly.
-							</p>
-							<p class="">
-								<a href="" title="Learn more" class="extra-bolder" style="--link-color: var(--reverse-link-color)">Learn more</a>
+								Because every time a Chrono Token is bought, a percentage is burned, another goes to the holders and
+								another to the 'Chrono Game' pot, the price fluctuates quickly.
 							</p>
 						</div>
+						<p class="heading-card_foot text-lg-right">
+							<a href="" title="Learn more" class="extra-bolder" style="--link-color: var(--reverse-link-color)"
+								>Learn more</a
+							>
+						</p>
+					</div>
 
-						<div class="heading-card">
-							
-							<!-- <i class="svg-icon fas fa-trophy fa-5x"></i> -->
-							<div class="shine column thumbnail300">
-  								<figure ><img src="assets/icons/Money_bag_perspective_matte.png" alt="stay tuned to the chronogame"></figure>
-							</div>
+					<div class="heading-card">
+						<!-- <i class="svg-icon fas fa-trophy fa-5x"></i> -->
+						<div class="heading-card_head shine thumbnail250">
+							<figure>
+								<img class="" src="assets/icons/Money_bag_perspective_matte.png" alt="stay tuned to the chronogame" />
+							</figure>
+						</div>
+						<div class="heading-card_body">
 							<h3 class="text-center text-lg-left">Stay tuned to the 'Chrono Game'</h3>
 
 							<p class="text-medium">
-								A game will be launched every x time and those closest to the established purchase time will win the jackpot!
-							</p>
-
-							<p class="">
-								<a href="" title="Learn more" class="extra-bolder" style="--link-color: var(--reverse-link-color)">Learn more</a>
+								A game will be launched every x time and those closest to the established purchase time will win the
+								jackpot!
 							</p>
 						</div>
-					</aside>
-				</div>
+
+						<p class="heading-card_foot">
+							<a href="" title="Learn more" class="extra-bolder" style="--link-color: var(--reverse-link-color)"
+								>Learn more</a
+							>
+						</p>
+					</div>
+				</aside>
 			</article>
 		</section>
-		<section id="about" class="container full-lg-screen section ">
-			<div class="">
-				<aside class="text-center text-lg-left bordered">
-					<div class="same-row">
-						<h2 class="heading-title c-section-title">
-						<span class="text-light" style="--hero-text-color: var(--fourth-color)">Launching</span> Cripto Token.
-						
-					</h2>
-					
-
-					<figure class="snip1321">
-						<img src="assets/images/logo_009_500.png" class="thumbnail200 circle" alt="launching cripto token ITO offert" />
-						<figcaption><i class="ion-upload"></i>
-							<h4>Produced By    </h4>
-							<h2>SMAdvising</h2>
-						</figcaption><a href="#"></a>
-					</figure>
-
+		<section id="start" class="container full-lg-screen start">
+			<article>
+				<aside class="text-center text-lg-left">
+					<div class="heading-title-fig">
+						<h2 class="heading-title">
+							<span class="text-light" style="--hero-text-color: var(--fourth-color)">Launching</span> Cripto Token.
+						</h2>
+						<figure class="snip1321">
+							<img
+								src="assets/images/logo_009_500.png"
+								class="thumbnail150 circle"
+								alt="launching cripto token ITO offert"
+							/>
+							<figcaption class="">
+								<i class="ion-upload"></i>
+								<h4>Produced By</h4>
+								<h2>SMAdvising</h2>
+							</figcaption>
+							<a href="#"></a>
+						</figure>
 					</div>
-					
-					<div class="heading-subtitle ">
-						<p>Chrono Token, web starts at september of 2021, but we launch the first 
-							<span class="text-light bolder" style="--hero-text-color: var(--fourth-color)">ITO (Initial Token Offert)</span> 
-							several weeks later, because we want to check first that the community is interested in this project, before embarking on 200%
+					<div class="heading-subtitle">
+						<p>
+							Chrono Token, web starts at september of 2021, but we launch the first
+							<span class="text-light bolder" style="--hero-text-color: var(--fourth-color)"
+								>ITO (Initial Token Offert)</span
+							>
+							several weeks later, because we want to check first that the community is interested in this project,
+							before embarking on 200%
 						</p>
-						
 					</div>
-
 					<p class="heading-footer">
 						<a href="" class="extra-bolder" title="Join the Community" style="--link-color: var(--reverse-link-color)"
 							>Join the Community</a
 						>
 					</p>
 				</aside>
-			</div>
-			<div class="about">
-				<article class="text-lg-center">
-					<aside class="text-lg-left">
-						<h1>555,555,555,555,555 Total Tokens </h1>
-						<h2>This is a real brutality, never thought before</h2>
-						<h4>There will be about 500k times more tokens, than inhabitants on earth, which means that each 
-							one will be able to buy 500k and there will still be enough to continue trading<i> A fucking madness! </i></h3>
-					</aside>
-				</article>
-				<article class="text-lg-right">
-					<aside class="text-center text-lg-right">
-						<h1>Juan Luna</h1>
-						<h5>Entrepeneur & <i>Full Stack Web Developer </i></h5>
-					</aside>
-				</article>
-				<article class="text-lg-right">
-					<aside class="text-center text-lg-right">
-						<h1>Juan Luna</h1>
-						<h5>Entrepeneur & <i>Full Stack Web Developer </i></h5>
-					</aside>
-				</article>
-			</div>
-			
+			</article>
+			<article>
+				<aside class="distance-l heading-cards">
+					<div class="heading-card">
+						<div class="heading-card_head shine thumbnail100">
+							<figure>
+								<img
+									class="filter-opacity"
+									src="assets/icons/Huobi Token_perspective_matte.png"
+									alt="stay tuned to the chronogame"
+								/>
+							</figure>
+						</div>
+						<div class="heading-card_body">
+							<h1 class="text-center text-lg-left">555,555,555,555,555 Total Tokens</h1>
+							<h2>This is a real brutality, never thought before</h2>
+
+							<p class="text-medium">
+								There will be about 500k times more tokens, than inhabitants on earth, which means that each one will be
+								able to buy 500k and there will still be enough to continue trading<i> A fucking madness! </i>
+							</p>
+						</div>
+					</div>
+					<div class="heading-card">
+						<div class="heading-card_head shine thumbnail100">
+							<figure>
+								<img
+									class="filter-opacity"
+									src="assets/icons/Diagram_perspective_matte.png"
+									alt="stay tuned to the chronogame"
+								/>
+							</figure>
+						</div>
+						<div class="heading-card_body">
+							<h1 class="text-center text-lg-left">
+								3% Burned <br />6% Holders <br />
+								9% Prize
+							</h1>
+							<h2>Because you never lost everything</h2>
+
+							<p class="text-medium">
+								There will be about 500k times more tokens, than inhabitants on earth, which means that each one will be
+								able to buy 500k and there will still be enough to continue trading<i> A fucking madness! </i>
+							</p>
+						</div>
+					</div>
+					<div class="heading-card">
+						<div class="heading-card_head shine thumbnail100">
+							<figure>
+								<img
+									class="filter-hue-rotate"
+									src="assets/icons/Flash_perspective_matte.png"
+									alt="stay tuned to the chronogame"
+								/>
+							</figure>
+						</div>
+						<div class="heading-card_body">
+							<h1 class="text-center text-lg-left">555,555,555,555,555 Total Tokens</h1>
+							<h2>This is a real brutality, never thought before</h2>
+
+							<p class="text-medium">
+								There will be about 500k times more tokens, than inhabitants on earth, which means that each one will be
+								able to buy 500k and there will still be enough to continue trading<i> A fucking madness! </i>
+							</p>
+						</div>
+					</div>
+				</aside>
+			</article>
 		</section>
 
 		<main role="main">
