@@ -7,14 +7,15 @@
 	--third-color: #39184b;
 	--third-alpha-color: #d90062;
 	--fourth-color: #547e99;
+	/* text-colors */
 	--text-black-color: #222;
 	--text-white-color: #e8f0f8;
+	--subtitle-color: #5b4eb8;
+	--emphasis-color: #4c92bf;
 	--link-color: #fab266;
 	--reverse-link-color: #311440;
 	--title-color: #333;
-	--subtitle-color: #5b4eb8;
-	--emphasis-color: #4c92bf;
-
+	/* other colors */
 	--white-color: #fff;
 	--gray-light-color: #f3f3f3;
 	--gray-color: #ccc;
@@ -22,6 +23,12 @@
 	--black-color: #000;
 	--white-alpha-color: rgba(255, 255, 255, 0.5);
 	--black-alpha-color: rgba(0, 0, 0, 0.5);
+	/* avatar colors */
+	--barbarian-color: #5b4eb8;
+	--archer-color: #ee5487;
+	--giant-color: #ec9b3b;
+	--globlin-color: #82b;
+	--wizard-color: #4facff;
 
 	--font: 'Raleway', sans-serif;
 	--max-width: 1200px;
@@ -318,6 +325,7 @@ textarea {
 }
 .heading-title {
 	font-size: 2.5rem;
+	color: var(--third-color);
 }
 .heading-subtitle {
 	font-size: 1.5rem;
@@ -358,8 +366,17 @@ textarea {
 .space-v-l {
 	margin: 1.5rem 0;
 }
-.text-first-color {
-	color: var(--first-color);
+.text-purple-dark-color {
+	color: var(--third-color);
+}
+.text-purple-light-color {
+	color: var(--subtitle-color);
+}
+.text-blue-color {
+	color: var(--emphasis-color);
+}
+.text-grey-color {
+	color: var(--title-color);
 }
 .text-center {
 	text-align: center;
@@ -476,9 +493,9 @@ textarea {
 .heading-card > small {
 	margin-top: -1rem;
 }
-.heading-card_head {
+/* .heading-card_head {
 	flex: 1;
-}
+} */
 .heading-card_body {
 	flex: 1;
 }
@@ -563,6 +580,7 @@ textarea {
 }
 .jumbotron-title {
 	font-size: 5vw;
+	color: var(--third-color);
 }
 .jumbotron-title span {
 	color: var(--hero-text-color);
@@ -838,6 +856,11 @@ input[type='search'] {
 .social-count:hover {
 	color: #0969da;
 }
+.team {
+	background-color: var(--second-color);
+	display: flex;
+	flex-direction: row;
+}
 .octicon-heart {
 	color: #bf3989;
 }
@@ -864,7 +887,7 @@ input[type='search'] {
 		height: calc(var(--header-height) - 0.5rem);
 	}
 	.start {
-		padding-top: 3rem;
+		padding-top: 4rem;
 	}
 }
 
@@ -1047,3 +1070,259 @@ figure.snip1321.hover:after {
 	transform: rotateX(0);
 	opacity: 0.9;
 }
+
+/* ***************************************** avatars *** */
+/* avatar colors */
+/* 
+	--barbarian-color: #5b4eb8; #493E9B
+	--archer-color: #ee5487;
+	--giant-color: #ec9b3b;
+	--globlin-color: #82b;
+	--wizard-color: #4facff; 
+	*/
+.slide-container {
+	margin: auto;
+	width: 500px;
+	text-align: center;
+}
+
+.wrapper {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.wrapper:focus {
+	outline: 0;
+}
+
+.clash-card {
+	background: white;
+	width: 300px;
+	display: inline-block;
+	margin: auto;
+	border-radius: 19px;
+	position: relative;
+	text-align: center;
+	box-shadow: -1px 15px 30px -12px black;
+	z-index: 9999;
+}
+
+.clash-card__image {
+	position: relative;
+	height: 230px;
+	margin-bottom: 35px;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
+.clash-card__image--barbarian {
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+}
+.clash-card__image--barbarian img {
+	width: 400px;
+	position: absolute;
+	top: -65px;
+	left: -70px;
+}
+
+.clash-card__image--archer {
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
+}
+.clash-card__image--archer img {
+	width: 400px;
+	position: absolute;
+	top: -34px;
+	left: -37px;
+}
+
+.clash-card__image--giant {
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+}
+.clash-card__image--giant img {
+	width: 340px;
+	position: absolute;
+	top: -30px;
+	left: -25px;
+}
+
+.clash-card__image--goblin {
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+}
+.clash-card__image--goblin img {
+	width: 370px;
+	position: absolute;
+	top: -21px;
+	left: -37px;
+}
+
+.clash-card__image--wizard {
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');
+}
+.clash-card__image--wizard img {
+	width: 345px;
+	position: absolute;
+	top: -28px;
+	left: -10px;
+}
+
+.clash-card__level {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	margin-bottom: 3px;
+}
+
+.clash-card__level--barbarian {
+	color: var(--barbarian-color);
+}
+
+.clash-card__level--archer {
+	color: var(--archer-color);
+}
+
+.clash-card__level--giant {
+	color: var(--giant-color);
+}
+
+.clash-card__level--goblin {
+	color: var(--globlin-color);
+}
+
+.clash-card__level--wizard {
+	color: var(--wizard-color);
+}
+
+.clash-card__unit-name {
+	font-size: 26px;
+	color: black;
+	font-weight: 900;
+	margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.clash-card__unit-stats--barbarian {
+	background: var(--barbarian-color);
+}
+.clash-card__unit-stats--barbarian .one-third {
+	border-right: 1px solid #7e19de;
+}
+
+.clash-card__unit-stats--archer {
+	background: var(--archer-color);
+}
+.clash-card__unit-stats--archer .one-third {
+	border-right: 1px solid #c6134e;
+}
+
+.clash-card__unit-stats--giant {
+	background: var(--giant-color);
+}
+.clash-card__unit-stats--giant .one-third {
+	border-right: 1px solid #b46207;
+}
+
+.clash-card__unit-stats--goblin {
+	background: var(--globlin-color);
+}
+.clash-card__unit-stats--goblin .one-third {
+	border-right: 1px solid #51a;
+}
+
+.clash-card__unit-stats--wizard {
+	background: #4facff;
+}
+.clash-card__unit-stats--wizard .one-third {
+	border-right: 1px solid #309eff;
+}
+
+.clash-card__unit-stats {
+	color: white;
+	font-weight: 700;
+	border-bottom-left-radius: 14px;
+	border-bottom-right-radius: 14px;
+}
+.clash-card__unit-stats .one-third {
+	width: 33%;
+	float: left;
+	padding: 20px 15px;
+}
+.clash-card__unit-stats sup {
+	position: absolute;
+	bottom: 4px;
+	font-size: 45%;
+	margin-left: 2px;
+}
+.clash-card__unit-stats .stat {
+	position: relative;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.clash-card__unit-stats .stat-value {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 12px;
+}
+.clash-card__unit-stats .no-border {
+	border-right: none;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: ' ';
+	clear: both;
+	height: 0;
+}
+
+.slick-prev {
+	left: 5px !important;
+	z-index: 999;
+}
+/* .slick-arrow {
+	width: 3rem !important;
+	height: 3rem !important;
+} */
+
+.slick-next {
+	right: 30px !important;
+	z-index: 999;
+}
+button.slick-arrow::before {
+	font-size: 3rem;
+}
+img.avatar01 {
+	position: relative;
+	left: 30px;
+	top: -20px;
+	height: 250px;
+	width: auto;
+}
+img.avatar02 {
+	position: relative;
+	top: -60px;
+	height: 290px;
+	width: auto;
+}
+img.avatar03 {
+	position: relative;
+	top: -40px;
+	height: 300px;
+	width: auto;
+}
+img.avatar04 {
+	position: relative;
+	top: -20px;
+	height: 250px;
+	width: auto;
+}
+img.avatar05 {
+	position: relative;
+	top: -20px;
+	height: 250px;
+	width: auto;
+}
+/* ***************************************** avatars *** */
