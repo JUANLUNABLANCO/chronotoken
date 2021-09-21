@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"scripts": {
 		"nodeDev": "nodemon PORT=5000 ./src/server.js",
-		"nodeProd": "SET PORT=5000 pm2 start ./src/server.js"
+		"nodeProd": "pm2 start ./src/server.js"
 	},
 	"private": true,
 	"dependencies": {},
