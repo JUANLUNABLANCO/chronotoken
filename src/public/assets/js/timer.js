@@ -1,10 +1,10 @@
-var language = window.navigator.language;
+var language = 'es'; //window.navigator.language || window.navigator.userLanguage;
 console.log(language);
 if (language.length > 2) {
 	language = language.split('-');
 	language = language[0];
 }
-twentyfour = false; ///set twentyfour here.
+var twentyfour = false; ///set twentyfour here.
 
 //language = "fr"; // manually set language
 
@@ -129,7 +129,7 @@ if (language === 'en') {
 
 (function clock() {
 	'use strict';
-	var adjDay, twentyfour, currentTime, currentHours, currentMinutes, mnth, day, oday, year, dat;
+	var adjDay, currentTime, currentHours, currentMinutes, mnth, day, oday, year, dat;
 
 	adjDay = function (day, daynum) {
 		var offset, doffset, left;
@@ -174,6 +174,10 @@ if (language === 'en') {
 		document.getElementById('year').style.letterSpacing = offset;
 		document.getElementById('day').style.letterSpacing = doffset;
 		document.getElementById('dates').style.left = left;
+		// added
+		document.getElementById('year2').style.letterSpacing = offset;
+		document.getElementById('day2').style.letterSpacing = doffset;
+		document.getElementById('dates2').style.left = left;
 	};
 
 	currentTime = new Date();
@@ -196,6 +200,17 @@ if (language === 'en') {
 	document.getElementById('date').innerHTML = oday;
 	document.getElementById('day').innerHTML = weekday[day];
 	document.getElementById('year').innerHTML = year;
+	// added
+	document.getElementById('clock2').innerHTML = '00:00:01';
+	document.getElementById('month2').innerHTML = 'November';
+	document.getElementById('date2').innerHTML = '01';
+	document.getElementById('day2').innerHTML = 'Monday';
+	document.getElementById('year3').innerHTML = '2021';
+	document.getElementById('clock3').innerHTML = '00:00:01';
+	document.getElementById('month3').innerHTML = 'January';
+	document.getElementById('date3').innerHTML = '01';
+	document.getElementById('day3').innerHTML = 'Saturday';
+	document.getElementById('year3').innerHTML = '2022';
 
 	adjDay(weekday[day], day);
 	setTimeout(function () {
