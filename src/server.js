@@ -76,4 +76,6 @@ const requestListener = (req, res) => {
 const server = createServer(requestListener);
 
 // hacemos que el servidor escuche el puerto configurado
-server.listen(PORT);
+server.listen(PORT, () => {
+	console.log('server listening in PORT: ', PORT);
+});
