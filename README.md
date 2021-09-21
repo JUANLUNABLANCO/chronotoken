@@ -35,18 +35,23 @@ this project generated manually with a litle server index.js in Nodejs
     > touch .gitignore
     > echo "node_modules" >> .gitignore
 
-    ## after coding some project
+    ## after coding some project and creating aproject in bitbucket
     > git status
     > git add ./
     > git commit -m "JuanLuna@master: first commit"
     > git push origin master
 
+    ## create user with root permission and folder for webs
+    $ sudo adduser -u 0 -o -g 0 gotth3way
+    $ sudo passwd _JUMALUBL_$27091971$.gotth3way.#12481632#
+    $ mkdir /var/www/chronotoken.com -p
+    $ cd /var/www/chronotoken.com
+
+
     ## git configuracion server
     $ git config --global user.name "gotht3way"
     $ git config --global user.email gotth3way.apis@gmail.com
     $ git config --list
-    $ mkdir /home/<username>/chronotoken.com
-    $ cd /home/<username>/chronotoken.com
     $ git init
-    $ git remote add https://gotth3way@bitbucket.org/gotth3way/projectexample_chronotoken.git
+    $ git remote add origin https://gotth3way@bitbucket.org/gotth3way/projectexample_chronotoken.git
     $ git pull origin master
