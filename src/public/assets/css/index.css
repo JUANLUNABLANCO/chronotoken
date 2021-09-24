@@ -59,12 +59,17 @@ html {
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
+	/* overflow-x: hidden; */
 }
 
 body {
 	margin: 0;
 	overflow-x: hidden;
 	color: var(--text-color);
+}
+main {
+	margin: 0;
+	padding: 0;
 }
 a {
 	color: var(--link-color);
@@ -457,6 +462,11 @@ a.link-disabled {
 	color: #ffffff !important;
 	background: #2c3140;
 	background: linear-gradient(to top, #2c3140, #181d26);
+}
+@media screen and (min-width: 640px) {
+	.md-visibility {
+		display: block;
+	}
 }
 
 @media screen and (min-width: 1024px) {
@@ -932,6 +942,9 @@ input[type='search'] {
 	background-attachment: fixed;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	overflow-x: hidden;
 }
 .octicon-heart {
 	color: #bf3989;
@@ -1350,10 +1363,11 @@ figure.snip1321.hover:after {
 @import 'https://fonts.googleapis.com/css?family=Rubik+Mono+One';
 
 .wraper-disappear {
-	display: grid;
+	display: none;
+	/* display: grid;
 	grid-template-columns: repeat(1, 100%);
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-around; */
 }
 .design {
 	color: #444;
@@ -1455,7 +1469,7 @@ figure.snip1321.hover:after {
 	*/
 .slide-container {
 	margin: auto;
-	width: 500px;
+	min-width: 320px;
 	text-align: center;
 }
 
@@ -1466,7 +1480,48 @@ figure.snip1321.hover:after {
 .slide-container .wrapper:focus {
 	outline: 0;
 }
-
+.slick-prev {
+	position: absolute;
+	left: 32px !important;
+	z-index: 999;
+}
+.slick-next {
+	right: 60px !important;
+	z-index: 999;
+}
+button.slick-arrow::before {
+	font-size: 3rem;
+	color: white !important;
+}
+@media screen and (min-width: 680px) {
+	.slick-prev {
+		left: 20% !important;
+	}
+	.slick-next {
+		right: calc(20% + 3rem) !important;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.slick-prev {
+		left: 30% !important;
+	}
+	.slick-next {
+		right: calc(30% + 1.5rem) !important;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.slick-prev {
+		left: 35% !important;
+	}
+	.slick-next {
+		right: calc(35% + 1.5rem) !important;
+	}
+}
+@media screen and (max-width: 480px) {
+	button.slick-arrow::before {
+		display: none;
+	}
+}
 .clash-card {
 	background: white;
 	width: 300px;
@@ -1669,17 +1724,6 @@ figure.snip1321.hover:after {
 	height: 0;
 }
 
-.slick-prev {
-	left: 5px !important;
-	z-index: 999;
-}
-.slick-next {
-	right: 30px !important;
-	z-index: 999;
-}
-button.slick-arrow::before {
-	font-size: 3rem;
-}
 img.avatar01 {
 	position: relative;
 	left: 10px;
@@ -1718,6 +1762,13 @@ img.avatar06 {
 	width: auto;
 }
 /* ***************************************** avatars *** */
+/* ************************************* logo-silver *** */
+@media screen and (min-width: 1024px) {
+	.logo-silver {
+		position: relative;
+	}
+}
+/*  */
 /* **************************** road map - time line *** */
 .roadmap {
 	background: url(../images/bg_roadmap_06.jpg);
@@ -2132,6 +2183,8 @@ body .footer .box-bubbles {
 	position: relative;
 	grid-area: footer;
 	min-height: 12rem;
+	max-width: 90%;
+	/* overflow-x: scroll; */
 }
 body .footer .bubbles {
 	position: absolute;
