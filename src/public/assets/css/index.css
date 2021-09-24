@@ -1929,13 +1929,7 @@ img.avatar06 {
 	font-family: 'numbers';
 	src: url(http://junesiphone.com/WebFonts/Dense-Regular.otf);
 }
-.almanaq-left-text {
-	position: relative;
-	top: 40px;
-	left: -280px;
-	font-size: 7rem;
-	color: var(--text-white-color);
-}
+
 .box-almanaq {
 	position: relative;
 	top: 20px;
@@ -2008,16 +2002,30 @@ img.avatar06 {
 	position: relative;
 	/* top: -40px; */
 }
+.almanaq-left-text {
+	position: relative;
+	top: 140px;
+	left: -80px;
+	font-size: 3rem;
+	color: var(--text-white-color);
+}
 .almanaq-right-text {
 	position: relative;
-	top: -330px;
-	right: -170px;
+	top: -175px;
+	right: -60px;
 	/* right: -240px; */
-	font-size: 7rem;
+	font-size: 3rem;
 	color: var(--text-white-color);
 }
 @media screen and (min-width: 1024px) {
+	.almanaq-left-text {
+		top: 40px;
+		left: -260px;
+		font-size: 6rem;
+	}
 	.almanaq-right-text {
+		font-size: 7rem;
+		top: -330px;
 		right: -230px;
 	}
 }
@@ -2258,6 +2266,7 @@ body .footer .bubbles .bubble {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding-bottom: 3rem;
 }
 .footer-content .footer-title {
 	font-size: 4rem;
@@ -2269,7 +2278,7 @@ body .footer .bubbles .bubble {
 }
 .footer-content .logo span {
 	font-family: Raleway;
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 	color: var(--third-alpha-color);
 }
 .footer-content .footer-body {
@@ -2285,6 +2294,9 @@ body .footer .bubbles .bubble {
 }
 .footer-content a:hover {
 	color: var(--archer-color);
+}
+.footer-content .footer-end {
+	font-size: 1rem;
 }
 
 /** ********************** rrss *** */
