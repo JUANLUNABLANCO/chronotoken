@@ -201,16 +201,16 @@ if (language === 'en') {
 	document.getElementById('day').innerHTML = weekday[day];
 	document.getElementById('year').innerHTML = year;
 	// added
-	document.getElementById('clock2').innerHTML = '00:00:01';
-	document.getElementById('month2').innerHTML = 'November';
-	document.getElementById('date2').innerHTML = '01';
-	document.getElementById('day2').innerHTML = 'Monday';
-	document.getElementById('year3').innerHTML = '2021';
-	document.getElementById('clock3').innerHTML = '00:00:01';
-	document.getElementById('month3').innerHTML = 'January';
-	document.getElementById('date3').innerHTML = '01';
-	document.getElementById('day3').innerHTML = 'Saturday';
-	document.getElementById('year3').innerHTML = '2022';
+	// document.getElementById('clock2').innerHTML = '00:00:01';
+	// document.getElementById('month2').innerHTML = 'November';
+	// document.getElementById('date2').innerHTML = '01';
+	// document.getElementById('day2').innerHTML = 'Monday';
+	// document.getElementById('year3').innerHTML = '2021';
+	// document.getElementById('clock3').innerHTML = '00:00:01';
+	// document.getElementById('month3').innerHTML = 'January';
+	// document.getElementById('date3').innerHTML = '01';
+	// document.getElementById('day3').innerHTML = 'Saturday';
+	// document.getElementById('year3').innerHTML = '2022';
 
 	adjDay(weekday[day], day);
 	setTimeout(function () {
