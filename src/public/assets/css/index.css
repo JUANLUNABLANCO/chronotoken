@@ -24,6 +24,7 @@
 	--black-color: #000;
 	--white-alpha-color: rgba(255, 255, 255, 0.5);
 	--black-alpha-color: rgba(0, 0, 0, 0.5);
+	--shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
 	/* avatar colors */
 	--barbarian-color: #5b4eb8;
 	--archer-color: #ee5487;
