@@ -175,9 +175,9 @@ if (language === 'en') {
 		document.getElementById('day').style.letterSpacing = doffset;
 		document.getElementById('dates').style.left = left;
 		// added
-		document.getElementById('year2').style.letterSpacing = offset;
-		document.getElementById('day2').style.letterSpacing = doffset;
-		document.getElementById('dates2').style.left = left;
+		// document.getElementById('year2').style.letterSpacing = offset;
+		// document.getElementById('day2').style.letterSpacing = doffset;
+		// document.getElementById('dates2').style.left = left;
 	};
 
 	currentTime = new Date();

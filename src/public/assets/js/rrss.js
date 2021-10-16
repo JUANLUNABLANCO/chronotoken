@@ -3,6 +3,7 @@
 $(document).ready(function () {
 	const $buttons = $('.demo__buttons');
 	const $toggle = $('.demo__open-btn');
+	const $demosocial = $('.demo__social-btn');
 	let delay = 200;
 	let steps = [];
 	let open = false;
@@ -26,6 +27,8 @@ $(document).ready(function () {
 		}
 
 		open = true;
+		$buttons.removeClass('zindex-icons');
+		$buttons.addClass('zindex-overall');
 		setStep(curStep);
 		curStep++;
 		lastTimeout = setTimeout(animate, delay);
@@ -35,6 +38,8 @@ $(document).ready(function () {
 		if (!open) animate();
 		else {
 			$buttons.removeClass('step-1 step-0 step-3 step-2');
+			$buttons.removeClass('zindex-overall');
+			$buttons.addClass('zindex-icons');
 			clearTimeout(lastTimeout);
 			open = false;
 			curStep = 0;
