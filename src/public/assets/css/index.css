@@ -856,7 +856,7 @@ input[type='search'] {
 }
 .logo span {
 	font-family: Raleway;
-	color: var(--third-alpha-color);
+	color:  var(--third-alpha-color);
 }
 .svg-logo {
 	display: block;
@@ -2387,7 +2387,7 @@ img.avatar06 {
 .footer-content .logo span {
 	font-family: Raleway;
 	font-size: 2.5rem;
-	color: var(--third-alpha-color);
+	color: 	var(--third-alpha-color);
 }
 .footer-content .footer-body {
 	width: 90%;
