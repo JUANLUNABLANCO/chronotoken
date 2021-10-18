@@ -857,7 +857,7 @@ input[type='search'] {
 }
 .logo span {
 	font-family: Raleway;
-	color:  var(--third-alpha-color);
+	/* color:  var(--third-alpha-color); */
 }
 .svg-logo {
 	display: block;
@@ -994,8 +994,7 @@ input[type='search'] {
 }
 @media screen and (min-width: 320px) {
 	.logo span {
-		/* font-size: 1.5rem; */
-		color: var(--third-alpha-color);
+		/* color: var(--third-alpha-color); */
 		display: inherit;
 	}
 	.logo-header .logo-title {
@@ -1029,7 +1028,7 @@ input[type='search'] {
 	}
 	.logo span {
 		font-size: 2rem;
-		color: var(--text-white-color);
+		/* color: var(--text-white-color); */
 	}
 	.logo-footer .logo-title, .logo-header .logo-title {
 		font-size: 2.5rem !important;
@@ -1040,6 +1039,12 @@ input[type='search'] {
 }
 
 /* ********************************fx special */
+/* ******************************** 3D letters */
+.effect03{
+  text-shadow: 
+    -1px -1px 1px #111111,
+    2px 2px 1px #363636;
+}
 /* ********* shine*/
 .shine figure {
 	position: relative;
@@ -2388,8 +2393,18 @@ img.avatar06 {
 .footer-content .logo span {
 	font-family: Raleway;
 	font-size: 2.5rem;
-	color: 	var(--third-alpha-color);
+	/* color: 	var(--third-alpha-color); */
 }
+.logo-header .logo-title {
+	font-weight: 700;
+	color: var(--text-white-color);
+}
+.logo-footer .logo-title {
+	font-weight: 700;
+	/* color: var(--third-alpha-color); */
+	color: var(--text-white-color);
+}
+
 .footer-content .footer-body {
 	width: 90%;
 	display: flex;
