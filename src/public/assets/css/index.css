@@ -681,7 +681,8 @@ a.link-disabled {
 	color: var(--black-color);
 }
 .jumbotron-subtitle span {
-	color: var(--emphasis-color);
+	color: purple;
+	/* var(--emphasis-color); */
 }
 @media screen and (min-width: 1200px) {
 	.jumbotron {
