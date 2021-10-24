@@ -154,6 +154,9 @@
 						<button class="space-v-l btn-liquid">
 							<a target="_blank" href="https://pancakeswap.finance/" class="inner" title="Get Started">Get Started</a>
 						</button>
+						<button class="btn-bro">
+							<a href="#my_pdf_viewer-1" class="inne" title="view white paper">View White Paper</a>
+						</button>
 
 						<!-- <div class="o-distance-l">
 						<span>
@@ -901,20 +904,32 @@
 					</aside>
 				</article>
 			</section>
-			<section id="my_pdf_viewer" class="full-lg-screen pdfviewer distance-top-0">
-				<div class="canvas_container bordered">
-					<canvas id="pdf_renderer"></canvas>
-				</div>
+			<section id="my_pdf_viewer-1" class="modal">
+				<a href="#cerrar" class="modal-close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path
+							d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"
+						/>
+					</svg>
+				</a>
 				<div class="pdf_controls">
 					<div id="navigation_controls">
-						<button id="go_previous">Previous</button>
+						<!-- <button class="pdfInfo">P</button> -->
+						<button id="go_previous"><</button>
 						<input id="current_page" value="1" type="number" min="1" />
-						<button id="go_next">Next</button>
+						<input id="pages" type="text" value="/ " disabled />
+						<button id="go_next">></button>
 					</div>
 					<div id="zoom_controls">
+						<!-- <button class="pdfInfo">Z</button> -->
 						<button id="zoom_out">-</button>
-						<input id="current_zoom" value="100" type="number" min="25" max="200" />
+						<input id="current_zoom" value="70" type="number" min="60" max="100" />
 						<button id="zoom_in">+</button>
+					</div>
+				</div>
+				<div class="modal-content bordered">
+					<div class="canvas_container">
+						<canvas id="pdf_renderer"></canvas>
 					</div>
 				</div>
 			</section>
