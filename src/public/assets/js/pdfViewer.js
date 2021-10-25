@@ -35,7 +35,7 @@ $(document).ready(function () {
 		render();
 	});
 	goNextBtn.addEventListener('click', (e) => {
-		if (myState.pdf == null || myState.currentPage > numMaxPages) return;
+		if (myState.pdf == null || myState.currentPage >= numMaxPages) return;
 
 		myState.currentPage += 1;
 		currentPageInput.value = myState.currentPage;
@@ -65,11 +65,11 @@ $(document).ready(function () {
 		if (myState.pdf == null || myState.zoom == 1) return;
 		if (myState.zoom >= 0.9) {
 			myState.zoom = 1;
-			currentZoomInput.value = 100;
+			currentZoomInput.value = '100 %';
 			return;
 		} else {
 			myState.zoom += 0.1;
-			currentZoomInput.value = Math.round(myState.zoom * 100);
+			currentZoomInput.value = Math.round(myState.zoom * 100) + ' %';
 			render();
 		}
 	});
@@ -77,11 +77,11 @@ $(document).ready(function () {
 		if (myState.pdf == null || myState.zoom == 0.3) return;
 		if (myState.zoom <= 0.6) {
 			myState.zoom = 0.5;
-			currentZoomInput.value = 50;
+			currentZoomInput.value = '50 %';
 			return;
 		} else {
 			myState.zoom -= 0.1;
-			currentZoomInput.value = Math.round(myState.zoom * 100);
+			currentZoomInput.value = Math.round(myState.zoom * 100) + ' %';
 			render();
 		}
 	});
