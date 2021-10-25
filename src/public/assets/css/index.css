@@ -47,6 +47,7 @@
 	--zindex-icons: 99;
 	--zindex-menus: 999;
 	--zindex-over-all: 9999;
+	--zindex-controls-over-all: 99999;
 }
 /* ********** Custom Properties ********** */
 /* **************************************************************************** */
@@ -518,8 +519,9 @@ a.link-disabled {
 	text-align: center;
 	margin-bottom: 2rem;
 	background-color: #24292f;
-	position: fixed;
+	position: absolute;
 	top: 0;
+	z-index: var(--zindex-controls-over-all);
 	
 }
 .pdf_controls * {
@@ -609,9 +611,10 @@ a.link-disabled {
 	fill: var(--third-alpha-color);
 }
 
-.modal[id|='my_pdf_viewer']:target {
+.modal[id|='whitepaperPDF']:target {
 	opacity: 1;
 	pointer-events: auto;
+	overflow: auto !important;
 }
 
 @media screen and (min-width: 1024px) {
