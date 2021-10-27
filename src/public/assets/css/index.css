@@ -535,23 +535,23 @@ a.link-disabled {
 	flex-direction: row;
 }
 #go_previous {
-	width: 3rem;
+	width: 1rem;
 
 }
 #current_page {
-	width: 4rem;
+	width: 3rem;
 	text-align: center;
 	/* background-color: #24292f;
 	color: var(--text-white-color); */
 }
 #pages {
-	width: 4rem;
+	width: 3rem;
 	text-align: center;
 	/* background-color: #24292f;
 	color: var(--text-white-color); */
 }
 #go_next {
-	width: 3rem;
+	width: 1rem;
 	/* background-color: #24292f;
 	color: var(--text-white-color); */
 }
@@ -562,20 +562,61 @@ a.link-disabled {
 	color: var(--text-white-color); */
 }
 #zoom_in {
-	width: 3rem;
+	width: 1rem;
 	/* background-color: #24292f;
 	color: var(--text-white-color); */
 }
 #current_zoom {
-	width: 4rem;
+	width: 3rem;
 	text-align: center;
 	/* background-color: #24292f;
 	color: var(--text-white-color);*/
 } 
 #zoom_out {
-	width: 3rem;
+	width: 1rem;
 	/* background-color: #24292f;
 	color: var(--text-white-color); */
+}
+#pdf_download {
+	position: absolute;
+	top: -1rem;
+	left: -2rem;
+	background-color: transparent;
+}
+
+@media  screen and (min-width: 768px) {
+	#go_previous {
+	width: 3rem;
+
+	}
+	#current_page {
+		width: 4rem;
+		text-align: center;
+	}
+	#pages {
+		width: 4rem;
+		text-align: center;
+	}
+	#go_next {
+		width: 3rem;
+	}
+	#zoom_controls {
+		display: flex;
+		flex-direction: row;
+	}
+	#zoom_in {
+		width: 3rem;
+	}
+	#current_zoom {
+		width: 4rem;
+	} 
+	#zoom_out {
+		width: 3rem;
+	}
+	#pdf_download {
+		top: -1rem;
+		left: -2rem;
+	}
 }
 
 /* ********** Modal ********** */
@@ -601,13 +642,15 @@ a.link-disabled {
 
 .modal-close {
 	position: absolute;
-	top: 1rem;
-	right: 1rem;
+	top: .2rem;
+	right: .2rem;
+	z-index: calc(var(--zindex-controls-over-all) + 10);
+
 }
 
 .modal-close svg {
-	width: 3rem;
-	height: 3rem;
+	width: 2rem;
+	height: 2rem;
 	fill: var(--third-alpha-color);
 }
 
@@ -615,6 +658,26 @@ a.link-disabled {
 	opacity: 1;
 	pointer-events: auto;
 	overflow: auto !important;
+}
+@media screen and (min-width: 468px) {
+	.modal-close {
+		top: .2rem;
+		right: 1rem;
+	}
+	.modal-close svg {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	.modal-close {
+		top: 1rem;
+		right: 3rem;
+	}
+	.modal-close svg {
+		width: 3rem;
+		height: 3rem;
+	}
 }
 
 @media screen and (min-width: 1024px) {
